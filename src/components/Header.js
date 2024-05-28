@@ -43,7 +43,7 @@ function Header(props: Props) {
           <AppBar>
             <Toolbar>
               <Typography variant="h6" component="div">
-                Scroll to hide App bar
+              Celestial design Header
               </Typography>
             </Toolbar>
           </AppBar>
