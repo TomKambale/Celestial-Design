@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Celestial Design footer</div>
+    <div alignItems= 'center' >© Celestial Designs. All Rights Reserved 2024. </div>
   )
 }
 

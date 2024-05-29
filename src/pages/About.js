@@ -1,8 +1,9 @@
-import { Divider } from '@mui/material'
+import { Container, Divider } from '@mui/material'
 import React from 'react'
 
 function About() {
   return (
+    <Container sx={{ mt: 4, mb: 4 }}>
     <div>
               <Divider orientation="horizontal">Welcome to Celestial Designs!</Divider>
 
@@ -19,6 +20,7 @@ function About() {
     At Celestial Designs, we cater to a variety of design preferences, including Contemporary, Rustic, Mid Century, Classic, and more. We also offer house and site visits as needed to ensure every project meets our high standards of quality and excellence.
     
     Discover the difference with Celestial Designs, where your dream home becomes a reality.</div>
+    </Container>
   )
 }
 

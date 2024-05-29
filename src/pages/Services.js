@@ -1,20 +1,78 @@
-import { Divider } from '@mui/material'
-import React from 'react'
+// import { Divider } from '@mui/material'
+// import React from 'react'
+
+// function Services() {
+//   return (
+//     <div>
+//               <Divider orientation="horizontal">Services</Divider>
+
+//         Services;
+//     Interior Design: Originally their primary service, involving bespoke house designs, furniture layouts, and execution of design plans.
+//     Construction: Building houses from the ground up based on custom plans.
+//     Landscaping: Designing and implementing exterior spaces including driveways, fencing, walkways, and greenery.
+//     Property Acquisition: Purchasing property for clients, particularly those from the diaspora.
+//     Renovations: Updating and refurbishing existing structures.
+//     Consultation Services: Providing expert advice and ideas in various design styles such as Contemporary, Rustic, Mid Century, and Classic.
+//     </div>
+//   )
+// }
+
+// export default Services
+import * as React from 'react';
+import { Card, CardContent, Grid, Typography, Container, Divider } from '@mui/material';
+
+const services = [
+  {
+    title: 'Interior Design',
+    description: 'We provide bespoke interior design services tailored to your style and preferences.'
+  },
+  {
+    title: 'Construction',
+    description: 'Our construction services ensure high-quality builds from start to finish.'
+  },
+  {
+    title: 'Landscaping',
+    description: 'Our landscaping services create beautiful, functional outdoor spaces.'
+  },
+  {
+    title: 'Property Acquisition',
+    description: 'We assist our diaspora clients in acquiring properties seamlessly.'
+  },
+  {
+    title: 'Renovations',
+    description: 'We offer renovation services to update and enhance existing structures.'
+  },
+  {
+    title: 'Consultation',
+    description: 'Our consultation services provide expert advice on various aspects of design and construction.'
+  }
+];
 
 function Services() {
   return (
-    <div>
-              <Divider orientation="horizontal">Services</Divider>
-
-        Services;
-    Interior Design: Originally their primary service, involving bespoke house designs, furniture layouts, and execution of design plans.
-    Construction: Building houses from the ground up based on custom plans.
-    Landscaping: Designing and implementing exterior spaces including driveways, fencing, walkways, and greenery.
-    Property Acquisition: Purchasing property for clients, particularly those from the diaspora.
-    Renovations: Updating and refurbishing existing structures.
-    Consultation Services: Providing expert advice and ideas in various design styles such as Contemporary, Rustic, Mid Century, and Classic.
-    </div>
-  )
+    <Container sx={{ mt: 4, mb: 4 }}>
+      {/* <Typography variant="h4" gutterBottom>
+        Our Services
+      </Typography> */}
+      <Divider orientation="horizontal">Services</Divider>
+      <Grid container spacing={4}>
+        {services.map((service, index) => (
+          <Grid item xs={12} md={6} key={index}>
+            <Card elevation={3}>
+              <CardContent>
+                <Typography variant="h5" component="div" gutterBottom>
+                  {service.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  {service.description}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
+  );
 }
 
-export default Services
+export default Services;

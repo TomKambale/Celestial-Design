@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
+import Resources from "./components/Resources";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import About from "./pages/About";
@@ -28,7 +29,7 @@ function App() {
     // // </BrowserRouter>
     <BrowserRouter>
       <Header />
-      
+      <Resources/>
       <About />
       <Services />
       <Projects/>
