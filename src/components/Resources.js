@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import myImage from './assets/aboutbackground.jpg';
+// import myImage from './assets/aboutbackground.jpg';
 
 
 // import required modules
@@ -29,14 +29,14 @@ export default function Resources() {
         modules={[Parallax, Pagination, Navigation]}
         className="mySwiper"
       >
-        <div
+        {/* <div
           slot="container-start"
           className="parallax-bg"
           style={{
             backgroundImage: `url(${myImage})`,
           }}
           data-swiper-parallax="-23%"
-        ></div>
+        ></div> */}
         <SwiperSlide>
           <div className="title" data-swiper-parallax="-300">
             Slide 1

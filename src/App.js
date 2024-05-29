@@ -29,7 +29,8 @@ function App() {
     // // </BrowserRouter>
     <BrowserRouter>
       <Header />
-      <Resources/>
+      {/* <Resources/> */}
+      <Home/>
       <About />
       <Services />
       <Projects/>
