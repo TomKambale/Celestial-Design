@@ -19,32 +19,47 @@
 
 // export default Services
 import * as React from 'react';
-import { Card, CardContent, Grid, Typography, Container, Divider } from '@mui/material';
+import { Card, CardContent, Grid, Typography, Container, Divider, Box } from '@mui/material';
+import DesignServicesTwoToneIcon from '@mui/icons-material/DesignServicesTwoTone';
+import EngineeringTwoToneIcon from '@mui/icons-material/EngineeringTwoTone';
+import LandscapeTwoToneIcon from '@mui/icons-material/LandscapeTwoTone';
+import AddBusinessTwoToneIcon from '@mui/icons-material/AddBusinessTwoTone';
+import HandymanTwoToneIcon from '@mui/icons-material/HandymanTwoTone';
+import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
 
 const services = [
   {
     title: 'Interior Design',
     description: 'We provide bespoke interior design services tailored to your style and preferences.'
+    ,
+    icon: <DesignServicesTwoToneIcon color="primary" />,
   },
   {
     title: 'Construction',
     description: 'Our construction services ensure high-quality builds from start to finish.'
+    ,
+    icon: <EngineeringTwoToneIcon color="primary" />,
   },
   {
     title: 'Landscaping',
     description: 'Our landscaping services create beautiful, functional outdoor spaces.'
+    ,
+    icon: <LandscapeTwoToneIcon color="primary" />,
   },
   {
     title: 'Property Acquisition',
-    description: 'We assist our diaspora clients in acquiring properties seamlessly.'
+    description: 'We assist our diaspora clients in acquiring properties seamlessly.',
+    icon: <AddBusinessTwoToneIcon color="primary" />,
   },
   {
     title: 'Renovations',
-    description: 'We offer renovation services to update and enhance existing structures.'
+    description: 'We offer renovation services to update and enhance existing structures.',
+    icon: <HandymanTwoToneIcon color="primary" />,
   },
   {
     title: 'Consultation',
-    description: 'Our consultation services provide expert advice on various aspects of design and construction.'
+    description: 'Our consultation services provide expert advice on various aspects of design and construction.',
+    icon: <DescriptionTwoToneIcon color="primary" />,
   }
 ];
 
@@ -60,9 +75,15 @@ function Services() {
           <Grid item xs={12} md={6} key={index}>
             <Card elevation={3}>
               <CardContent>
-                <Typography variant="h5" component="div" gutterBottom>
+              <Box display="flex" alignItems="center" mb={2}>
+                  {service.icon}
+                  <Typography variant="h6" gutterBottom sx={{ ml: 1 }}>
+                    {service.title}
+                  </Typography>
+                </Box>
+                {/* <Typography variant="h5" component="div" gutterBottom>
                   {service.title}
-                </Typography>
+                </Typography> */}
                 <Typography variant="body2" color="text.secondary">
                   {service.description}
                 </Typography>

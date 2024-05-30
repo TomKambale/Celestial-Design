@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 import { Parallax, Pagination, Navigation } from 'swiper/modules';
 
 export default function Resources() {
-  return (
+  return ( 
     <>
       <Swiper
         style={{

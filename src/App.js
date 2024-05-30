@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import Resources from "./components/Resources";
+// import Resources from "./components/Resources";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import About from "./pages/About";
@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Switch } from '@mui/material';
 
 function App() {
