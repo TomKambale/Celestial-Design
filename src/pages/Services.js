@@ -26,6 +26,18 @@ import LandscapeTwoToneIcon from '@mui/icons-material/LandscapeTwoTone';
 import AddBusinessTwoToneIcon from '@mui/icons-material/AddBusinessTwoTone';
 import HandymanTwoToneIcon from '@mui/icons-material/HandymanTwoTone';
 import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#7C142B',
+    },
+    secondary: {
+      main: '#FFE96E',
+    },
+  },
+});
 
 const services = [
   {
@@ -69,6 +81,7 @@ function Services() {
       {/* <Typography variant="h4" gutterBottom>
         Our Services
       </Typography> */}
+      <ThemeProvider theme={theme}>
       <Divider orientation="horizontal">Services</Divider>
       <Grid container spacing={4}>
         {services.map((service, index) => (
@@ -92,6 +105,7 @@ function Services() {
           </Grid>
         ))}
       </Grid>
+      </ThemeProvider>
     </Container>
   );
 }

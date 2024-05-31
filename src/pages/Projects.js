@@ -101,13 +101,14 @@ const itemData = [
     title: 'Bike',
     cols: 2,
   },
+  
 ];
 
 function Projects() {
   return (
     <Container sx={{ mt: 4, mb: 4 }}>
     <div style= {{ width: '100%'}}>
-      <Divider orientation="horizontal"><h2>Projects</h2></Divider>
+      <Divider orientation="horizontal">Projects</Divider>
       <ImageList sx={{ width: '100%', height: 'auto', overflow: 'hidden' }} variant="quilted" cols={4} rowHeight={121}>
         {itemData.map((item) => (
           <ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>

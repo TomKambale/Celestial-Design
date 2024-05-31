@@ -280,10 +280,10 @@ const FAQ = () => {
   return (
     <Container sx={{ mt: 4, mb: 4 }}>
       <ThemeProvider theme={theme}>
-        <Paper elevation={3}>
+        {/* <Paper elevation={3}> */}
           <Box p={4}>
             <Divider orientation="horizontal">
-              <Typography variant="h4" gutterBottom>
+              <Typography  gutterBottom>
                 FAQs
               </Typography>
             </Divider>
@@ -308,7 +308,7 @@ const FAQ = () => {
               ))}
             </Grid>
           </Box>
-        </Paper>
+        {/* </Paper> */}
       </ThemeProvider>
     </Container>
   );

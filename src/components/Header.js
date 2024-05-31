@@ -5,10 +5,10 @@ import { Container } from "@mui/material";
 function Header() {
   return (
     <Container sx={{ mt: 4, mb: 4 }}>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-transparent text-body">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img src={image} alt="Celestial Designs" width="30" height="24" />
+          <img src={image} alt="Celestial Designs" width="140" height="55" />
         </a>
         <button
           className="navbar-toggler"
