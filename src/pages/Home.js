@@ -70,6 +70,14 @@ import AccessTimeTwoToneIcon from '@mui/icons-material/AccessTimeTwoTone';
 import TaskTwoToneIcon from '@mui/icons-material/TaskTwoTone';
 import ManageAccountsTwoToneIcon from '@mui/icons-material/ManageAccountsTwoTone';
 import image from '../assets/compound.jpg';
+import image1 from '../assets/render.jpg';
+import image2 from '../assets/cactus2.jpg';
+import image3 from '../assets/garden.jpg';
+import image4 from '../assets/drive.jpg';
+import image5 from '../assets/dandelion.jpg';
+import image6 from '../assets/botanical.jpg';
+import image7 from '../assets/cactus.jpg';
+import image8 from '../assets/seedlings.jpg';
 
 const content = [
   {
@@ -165,44 +173,51 @@ function Content() {
     };
   }
   
+  // function srcset(image: string, size: number, rows: number = 1, cols: number = 1): { src: string, srcSet: string } {
+  //   return {
+  //     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+  //     srcSet: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format&dpr=2 2x`,
+  //   };
+  // }
+  
   const itemData = [
     {
-      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+      img: `${image1}`,
       title: 'Breakfast',
       rows: 2,
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+      img: `${image2}`,
       title: 'Burger',
     },
     {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+      img: `${image3}`,
       title: 'Camera',
     },
     {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+      img: `${image4}`,
       title: 'Coffee',
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+      img: `${image5}`,
       title: 'Hats',
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+      img: `${image6}`,
       title: 'Honey',
       author: '@arwinneil',
       rows: 2,
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+      img: `${image7}`,
       title: 'Basketball',
     },
     {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+      img: `${image8}`,
       title: 'Fern',
     },
   ]

@@ -278,7 +278,7 @@ const FAQ = () => {
   ];
 
   return (
-    <Container sx={{ mt: 4, mb: 4 }}>
+    <Container sx={{ mt: 4, mb: 4, minHeight: '100vh', }}>
       <ThemeProvider theme={theme}>
         {/* <Paper elevation={3}> */}
           <Box p={4}>

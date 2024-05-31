@@ -125,7 +125,7 @@ const theme = createTheme({
 function Contact() {
   return (
     <ThemeProvider theme={theme}>
-      <Container sx={{ mt: 4, mb: 4 }}>
+      <Container sx={{ mt: 4, mb: 4, minHeight: '100vh', }}>
         <Box>
           <Divider orientation="horizontal">
             <Typography gutterBottom>
@@ -134,11 +134,11 @@ function Contact() {
           </Divider>
           <Typography>
             Your Garden Needs a Bit of Love?{' '}
-            <a href="#" className="btn active" role="button" data-bs-toggle="button" aria-pressed="true">
-              <Typography component="span" color="primary">
+            {/* <a href="#" className="btn active" role="button" data-bs-toggle="button" aria-pressed="true"> */}
+              <Typography component="span" color="primary" a href="#" data-bs-toggle="button">
                 Contact Us Now!
               </Typography>
-            </a>
+            {/* </a> */}
           </Typography>
         </Box>
         <Grid container spacing={4} sx={{ mt: 4 }}>

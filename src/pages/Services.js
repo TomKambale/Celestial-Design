@@ -77,7 +77,7 @@ const services = [
 
 function Services() {
   return (
-    <Container sx={{ mt: 4, mb: 4 }}>
+    <Container sx={{ mt: 4, mb: 4, minHeight: '100vh',}}>
       {/* <Typography variant="h4" gutterBottom>
         Our Services
       </Typography> */}

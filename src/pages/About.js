@@ -3,7 +3,7 @@ import React from 'react'
 
 function About() {
   return (
-    <Container sx={{ mt: 4, mb: 4 }}>
+    <Container sx={{ mt: 4, mb: 4, minHeight: '100vh', }}>
     <div>
               <Divider orientation="horizontal">Welcome to Celestial Designs!</Divider>
 
